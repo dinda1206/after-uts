@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+#include <conio.h>
+
+using namespace std;
+
+struct k_titik {
+	int x, y;
+};
+
+int main() {
+	struct k_titik a, b;
+	double jarak;
+	cout << "titik A \nKoordinat x : ";
+	cin >> a.x;
+	cout << "Koordinat x : ";
+	cin >> a.y;
+	cout << endl;
+	cout << "titik b \nKoordinat x : ";
+	cin >> b.x;
+	cout << "Koordinat x : ";
+	cin >> b.y;
+	cout << endl;
+	jarak = sqrt(pow((a.x - b.x), 2) + pow((a.y - b.y), 2));
+	cout << "Jarak titik A dengan titik B = " << jarak;
+}
